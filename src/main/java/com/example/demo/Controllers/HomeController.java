@@ -13,10 +13,5 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/next")
-    public String next(@RequestParam(name="name", required=false, defaultValue = "World") String name, Model model) {
-        model.addAttribute("name", name);
-        model.addAttribute("title", "след страницы");
-        return "next";
-    }
+
 }
